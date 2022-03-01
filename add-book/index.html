@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Your page title here :)</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Add Book</h1>
+      <form id="book-form">
+        <div>
+          <label for="title">Title</label>
+          <input class="u-full-width" type="text" name="title" id="title" />
+        </div>
+        <div>
+          <label for="author">Author</label>
+          <input class="u-full-width" type="text" name="author" id="author" />
+        </div>
+        <div>
+          <label for="isbn">ISBN</label>
+          <input class="u-full-width" type="text" name="isbn" id="isbn" />
+        </div>
+        <div>
+          <button class="u-full-width" type="submit">Submit</button>
+        </div>
+      </form>
+      <hr />
+      <table class="u-full-width">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+    <script src="js/book.js"></script>
+  </body>
+</html>
