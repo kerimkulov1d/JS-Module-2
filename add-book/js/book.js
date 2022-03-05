@@ -55,3 +55,13 @@ document.getElementById('book-form').addEventListener('submit', (e) => {
 
   e.preventDefault();
 });
+
+document.getElementById('book-list').addEventListener('click', (e) => {
+  if (e.target.classList.contains('delete')) {
+    if (confirm('Are you sure???')) {
+      e.target.parentElement.parentElement.remove();
+      const ui = new UI();
+      ui.showAlert('Book deleted!', 'success');
+    }
+  }
+});
